@@ -3,6 +3,7 @@ import '@/app/work.css'
 import { useParams, useRouter } from 'next/navigation';
 import { WorkData } from '@/app/work_data';
 import ContactForm from '@/app/_components/ContactForm';
+import Image from 'next/image';
 
 const Thumbnail = () => {
     const { category } = useParams(); // Get the dynamic parameter

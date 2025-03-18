@@ -2,8 +2,10 @@
 import '@/app/index.css'
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import Image from 'next/image';
 import { usePathname } from "next/navigation";
 import { useRef , useEffect} from 'react';
+
 const Nav = () => {
   const IsMobileNavOpen =useRef(false)
   const ServiceItems = useRef([]);
