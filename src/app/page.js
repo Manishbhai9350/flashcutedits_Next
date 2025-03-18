@@ -6,13 +6,14 @@ import {CiFacebook} from 'react-icons/ci'
 import { FaInstagram } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
 import { FaPhoneAlt } from "react-icons/fa";
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <main>
       <section className="landing">
         <div className="image">
-          <img src="/grid.avif" alt="" />
+          <Image fill alt='Home Image' src='/grid.avig' />
         </div>
         <h1 className="santoshi">Welcome To</h1>
         <h1 className="santoshi">Flashcut Edits</h1>
@@ -38,19 +39,19 @@ export default function Home() {
           <div className="services">
             <div className="service">
               <div className="image">
-                <img src="/basic_editing.jpg" alt="" />
+                <Image fill src={'/basic_editing.jpg'} alt='Image' />
               </div>
               <h4 className="courier">Basic Video Editing</h4>
             </div>
             <div className="service">
               <div className="image">
-                <img src="/graphic_design.jpg" alt="" />
+                <Image fill src="/graphic_design.jpg" alt="Image" />
               </div>
               <h4 className="courier">Advance Video Editing</h4>
             </div>
             <div className="service">
               <div className="image">
-                <img src="/edit.jpg" alt="" />
+                <Image fill src="/edit.jpg" alt="Image" />
               </div>
               <h4 className="courier">Graphic Desinging</h4>
             </div>
@@ -60,13 +61,13 @@ export default function Home() {
       <section id="about-section" className="about-section">
         <div className="about-img">
           <div className="img">
-            <img src="/team.jpg" alt="img" srcSet=""/>
+            <Image fill src="/team.jpg" alt="img"/>
           </div>
         </div>
         <div className="about-info santoshi">
           <h1>Welcome to Flashcut Edits - Where Creativity Meets Precision!
           </h1>
-          <p className="courier">At Flashcut Edits, we specialize in high-quality, professional video editing services tailored for content creators, businesses, and influencers. Whether you're a YouTuber, an entrepreneur, or a brand looking to elevate your video content, we ensure seamless edits that engage and captivate your audience.
+          <p className="courier">At Flashcut Edits, we specialize in high-quality, professional video editing services tailored for content creators, businesses, and influencers. Whether you are a YouTuber, an entrepreneur, or a brand looking to elevate your video content, we ensure seamless edits that engage and captivate your audience.
           </p>
         </div>
       </section>
@@ -101,7 +102,7 @@ export default function Home() {
               
                       <p style={{fontSize:".88rem!importan",letterSpacing:-.5}} className="courier">
                         Social Media Optimization - We craft viral-worthy edits that align
-                        with Instagram, TikTok, and YouTube's latest trends.
+                        with Instagram, TikTok, and YouTube latest trends.
                       </p>
 
             </li>
@@ -114,8 +115,8 @@ export default function Home() {
             </li>
             <li>
               <p style={{fontSize:".88rem!importan",letterSpacing:-.5}} className="courier">
-                Let's create Video / Thumbnails that grab attention and boost your
-                bussiness or idea performance! Let me know if you're interested. 🚀
+                Lets create Video / Thumbnails that grab attention and boost your
+                bussiness or idea performance! Let me know if you are interested. 🚀
               </p>
 
             </li>
@@ -126,7 +127,7 @@ export default function Home() {
         </div>
         <div className="us-image">
           <div className="img">
-            <img src="/why_us.jpg" alt=""/>
+            <Image fill src="/why_us.jpg" alt="Image"/>
           </div>
         </div>
       </section>
@@ -134,7 +135,7 @@ export default function Home() {
         <div className="contact-content">
           <h1 className="santoshi">Contact Us</h1>
         <p className="courier">
-          Got a project in mind? Let's bring your vision to life! At Flashcut Edits, we deliver high-quality video editing tailored to your needs.
+          Got a project in mind? Lets bring your vision to life! At Flashcut Edits, we deliver high-quality video editing tailored to your needs.
         </p>
         </div>
         <div className="contact">
