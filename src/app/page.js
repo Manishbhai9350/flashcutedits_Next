@@ -1,103 +1,184 @@
-import Image from "next/image";
+'use client'
+import Link from 'next/link';
+import ContactForm from './_components/ContactForm';
+import './index.css'
+import {CiFacebook} from 'react-icons/ci'
+import { FaInstagram } from "react-icons/fa";
+import { CgMail } from "react-icons/cg";
+import { FaPhoneAlt } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main>
+      <section className="landing">
+        <div className="image">
+          <img src="/grid.avif" alt="" />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <h1 className="santoshi">Welcome To</h1>
+        <h1 className="santoshi">Flashcut Edits</h1>
+        <p style={{position:'relative',zIndex:99,color:'white'}} className="courier">Professional Video Editing And Graphic Desinging</p>
+        <div className="landing-socials">
+          <div className="socials">
+            <div style={{background:'transparent'}} className="social">
+              <Link style={{color:'white'}} href="https://www.facebook.com/FlashCutEdits/" target="_blank">
+                <CiFacebook />
+              </Link>
+            </div>
+            <div style={{background:'transparent'}} className="social">
+              <Link style={{color:'white'}} href="https://www.instagram.com/flashcut.tanishq/" target="_blank" >
+                <FaInstagram />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="service-section">
+        <div className="service-info">
+          <h1 className="service-heading split-text-heading santoshi">Our Services</h1>
+          <div className="services">
+            <div className="service">
+              <div className="image">
+                <img src="/basic_editing.jpg" alt="" />
+              </div>
+              <h4 className="courier">Basic Video Editing</h4>
+            </div>
+            <div className="service">
+              <div className="image">
+                <img src="/graphic_design.jpg" alt="" />
+              </div>
+              <h4 className="courier">Advance Video Editing</h4>
+            </div>
+            <div className="service">
+              <div className="image">
+                <img src="/edit.jpg" alt="" />
+              </div>
+              <h4 className="courier">Graphic Desinging</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about-section" className="about-section">
+        <div className="about-img">
+          <div className="img">
+            <img src="/team.jpg" alt="img" srcSet=""/>
+          </div>
+        </div>
+        <div className="about-info santoshi">
+          <h1>Welcome to Flashcut Edits - Where Creativity Meets Precision!
+          </h1>
+          <p className="courier">At Flashcut Edits, we specialize in high-quality, professional video editing services tailored for content creators, businesses, and influencers. Whether you're a YouTuber, an entrepreneur, or a brand looking to elevate your video content, we ensure seamless edits that engage and captivate your audience.
+          </p>
+        </div>
+      </section>
+      <section className="why-us-section">
+        <div className="us-info">
+          <h3 className="santoshi">Why Choose US?</h3>
+        <div className="us-about">
+          <ul>
+            <li>
+              <p style={{fontSize: ".88rem!importan",letterSpacing:-.5}} className="courier">
+                Experienced Editors - Our team includes skilled professionals with
+                2+ to 4+ years of experience, ensuring precise and high-quality
+                video edits.
+              </p>
+            </li>
+            <li>
+              <p style={{fontSize:".88rem!importan",letterSpacing:-.5}} className="courier">
+                Customized to Your Style - Whether you prefer cinematic, fast-paced,
+                or minimal edits, we adapt to your unique branding and vision.
+              </p>
+              
+            </li>
+            <li>
+              
+                      <p style={{fontSize:".88rem!importan",letterSpacing:-.5}} className="courier">
+                        High-Retention Edits - Our expertise in YouTube, Reels, Shorts, and
+                        business videos ensures content that keeps viewers hooked.
+                      </p>
+
+            </li>
+            <li>
+              
+                      <p style={{fontSize:".88rem!importan",letterSpacing:-.5}} className="courier">
+                        Social Media Optimization - We craft viral-worthy edits that align
+                        with Instagram, TikTok, and YouTube's latest trends.
+                      </p>
+
+            </li>
+            <li>
+
+              <p style={{fontSize:".88rem!importan",letterSpacing:-.5}} className="courier">
+                Eye-Catching Thumbnails - Get professionally designed YouTube
+                thumbnails that maximize clicks and engagement.
+              </p>
+            </li>
+            <li>
+              <p style={{fontSize:".88rem!importan",letterSpacing:-.5}} className="courier">
+                Let's create Video / Thumbnails that grab attention and boost your
+                bussiness or idea performance! Let me know if you're interested. 🚀
+              </p>
+
+            </li>
+          </ul>
+  
+  
+        </div>
+        </div>
+        <div className="us-image">
+          <div className="img">
+            <img src="/why_us.jpg" alt=""/>
+          </div>
+        </div>
+      </section>
+      <div id="contact-section" className="contact-section">
+        <div className="contact-content">
+          <h1 className="santoshi">Contact Us</h1>
+        <p className="courier">
+          Got a project in mind? Let's bring your vision to life! At Flashcut Edits, we deliver high-quality video editing tailored to your needs.
+        </p>
+        </div>
+        <div className="contact">
+          <div className="visit">
+            <div className="info-con">
+              <h4 className="santoshi">Visit Us</h4>
+              
+              <div className="visit-content">
+                <div className="visit-child">
+                  <div style={{background:'transparent'}} className="icon">
+                    <FaPhoneAlt style={{color:"white",fontSize:23}} />
+                  </div>
+                  <div className="info">
+                    <h3 className="santoshi">Phone</h3>
+                    <p className="courier">+919867009961</p>
+                  </div>
+                </div>
+                <div className="visit-child">
+                  <div style={{background:'transparent'}} className="icon">
+                    <CgMail style={{color:"white",fontSize:35,fontWeight:200}} />
+                  </div>
+                  <div className="info">
+                    <h3 className="santoshi">Email</h3>
+                    <p className="courier">flashcuteditss@gmail.com</p>
+                  </div>
+                </div>
+                <div className="socials">
+                  <div style={{background:'transparent'}} className="social">
+                    <Link style={{color:'white'}} target="_blank" href="https://www.facebook.com/FlashCutEdits/">
+                      <CiFacebook style={{color:'white',fontSize:35}} />
+                    </Link>
+                  </div>
+                  <div style={{background:'transparent'}} className="social">
+                    <Link style={{color:'white'}} target="_blank" href="https://www.instagram.com/flashcut.tanishq/" >
+                      <FaInstagram style={{color:'white'}} />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <ContactForm />
+        </div>
+      </div>
+    </main>
   );
 }

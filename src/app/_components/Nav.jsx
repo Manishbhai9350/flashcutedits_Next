@@ -1,9 +1,9 @@
 'use client';
+import '@/app/index.css'
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import React, { useEffect, useRef } from "react";
-import { Link, useLocation, useNavigationType } from "react-router-dom";
-
+import { usePathname } from "next/navigation";
+import { useRef , useEffect} from 'react';
 const Nav = () => {
   const IsMobileNavOpen =useRef(false)
   const ServiceItems = useRef([]);
@@ -16,9 +16,8 @@ const Nav = () => {
   const ContentHeight = useRef(0)
   const ServiceChildHeights = useRef([])
   
-  const navigationType = useNavigationType(); // PUSH, POP, REPLACE
-  const location = useLocation();
-  const CurrentPath = useRef(location.pathname);
+  const pathname = usePathname();
+  const CurrentPath = useRef(pathname);
 
 
 
@@ -259,30 +258,30 @@ const Nav = () => {
 
   
   useEffect(() => {
-    if(location.pathname == CurrentPath.current) return;
-    CurrentPath.current = location.pathname
-    CloseNav()
-  }, [location, navigationType]);
+    if (pathname === CurrentPath.current) return;
+    CurrentPath.current = pathname;
+    CloseNav();
+  }, [pathname]);
 
   return (
     <>
       <div className="mobile-nav">
         <div className="logo">
-          <Link to="/">
+          <a  href="/">
             <img src="/logo/flash_cut_white.png" alt="Logo" />
-          </Link>
+          </a>
         </div>
         <div className="hamburger">
           <div className="line"></div>
           <div className="line"></div>
         </div>
         <div className="mobile-nav-items">
-          <Link to="/" className="nav-link ">
+          <a href="/" className="nav-a nav-link ">
             Home
-          </Link>
+          </a>
           <div closed="true" ref={ServiceCon} className="services item">
             <div ref={ServiceContent} className="item-content">
-              <h2 className="nav-link ">Services</h2>
+              <h2 className="nav-a nav-link ">Services</h2>
               <div className="drop-down"></div>
             </div>
             <div className="item-data">
@@ -299,92 +298,92 @@ const Nav = () => {
                 <div className="item-data">
                   <div className="item-data-child">
                     <div className="data-child">
-                      <Link
-                        className="page-redirect"
-                        to="/work/editing/basic/podcast"
+                      <a
+                        className='page-redirect'
+                        href="/work/editing/basic/podcast"
                       >
                         1 Podcasts Editing
-                      </Link>
+                      </a>
                     </div>
 
                     <div className="data-child">
-                      <Link
-                        className="page-redirect"
-                        to="/work/editing/basic/business"
+                      <a
+                        className='page-redirect'
+                        href="/work/editing/basic/business"
                       >
                         2 Business ADS
-                      </Link>
+                      </a>
                     </div>
 
                     <div className="data-child">
-                      <Link
-                        className="page-redirect"
-                        to="/work/editing/basic/gym"
+                      <a
+                        className='page-redirect'
+                        href="/work/editing/basic/gym"
                       >
                         3 GYM Edits
-                      </Link>
+                      </a>
                     </div>
 
                     <div className="data-child">
-                      <Link
-                        className="page-redirect"
-                        to="/work/editing/basic/animated"
+                      <a
+                        className='page-redirect'
+                        href="/work/editing/basic/animated"
                       >
                         4 Animated Edits
-                      </Link>
+                      </a>
                     </div>
 
                     <div className="data-child">
-                      <Link
-                        className="page-redirect"
-                        to="/work/editing/basic/faceless"
+                      <a
+                        className='page-redirect'
+                        href="/work/editing/basic/faceless"
                       >
                         5 Faceless Edits
-                      </Link>
+                      </a>
                     </div>
                     <div className="data-child">
-                      <Link
-                        className="page-redirect"
-                        to="/work/editing/basic/health"
+                      <a
+                        className='page-redirect'
+                        href="/work/editing/basic/health"
                       >
                         6 Health Edits
-                      </Link>
+                      </a>
                     </div>
 
                     <div className="data-child">
-                      <Link
-                        className="page-redirect"
-                        to="/work/editing/basic/tech"
+                      <a
+                        className='page-redirect'
+                        href="/work/editing/basic/tech"
                       >
                         7 Tech Reels
-                      </Link>
+                      </a>
                     </div>
 
                     <div className="data-child">
-                      <Link
-                        className="page-redirect"
-                        to="/work/editing/basic/gaming"
+                      <a
+                        className='page-redirect'
+                        href="/work/editing/basic/gaming"
                       >
                         8 Gaming Reels
-                      </Link>
+                      </a>
                     </div>
 
                     <div className="data-child">
-                      <Link
-                        className="page-redirect"
-                        to="/work/editing/basic/interview"
+                      <a
+                        className='page-redirect'
+                        href="/work/editing/basic/interview"
                       >
                         9 Interview Reels
-                      </Link>
+                      </a>
                     </div>
 
                     <div className="data-child">
-                      <Link
-                        className="page-redirect"
-                        to="/work/editing/basic/education"
+                      <a
+                        className='page-redirect'
+                        href="/work/editing/basic/education"
                       >
                         10 Education Reels
-                      </Link>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -400,92 +399,92 @@ const Nav = () => {
                 <div className="item-data">
                 <div className="item-data-child">
                     <div className="data-child">
-                      <Link
-                        className="page-redirect"
-                        to="/work/editing/advance/podcast"
+                      <a
+                        className='page-redirect'
+                        href="/work/editing/advance/podcast"
                       >
                         1 Podcasts Editing
-                      </Link>
+                      </a>
                     </div>
 
                     <div className="data-child">
-                      <Link
-                        className="page-redirect"
-                        to="/work/editing/advance/business"
+                      <a
+                        className='page-redirect'
+                        href="/work/editing/advance/business"
                       >
                         2 Business ADS
-                      </Link>
+                      </a>
                     </div>
 
                     <div className="data-child">
-                      <Link
-                        className="page-redirect"
-                        to="/work/editing/advance/gym"
+                      <a
+                        className='page-redirect'
+                        href="/work/editing/advance/gym"
                       >
                         3 GYM Edits
-                      </Link>
+                      </a>
                     </div>
 
                     <div className="data-child">
-                      <Link
-                        className="page-redirect"
-                        to="/work/editing/advance/animated"
+                      <a
+                        className='page-redirect'
+                        href="/work/editing/advance/animated"
                       >
                         4 Animated Edits
-                      </Link>
+                      </a>
                     </div>
 
                     <div className="data-child">
-                      <Link
-                        className="page-redirect"
-                        to="/work/editing/advance/faceless"
+                      <a
+                        className='page-redirect'
+                        href="/work/editing/advance/faceless"
                       >
                         5 Faceless Edits
-                      </Link>
+                      </a>
                     </div>
                     <div className="data-child">
-                      <Link
-                        className="page-redirect"
-                        to="/work/editing/advance/health"
+                      <a
+                        className='page-redirect'
+                        href="/work/editing/advance/health"
                       >
                         6 Health Edits
-                      </Link>
+                      </a>
                     </div>
 
                     <div className="data-child">
-                      <Link
-                        className="page-redirect"
-                        to="/work/editing/advance/tech"
+                      <a
+                        className='page-redirect'
+                        href="/work/editing/advance/tech"
                       >
                         7 Tech Reels
-                      </Link>
+                      </a>
                     </div>
 
                     <div className="data-child">
-                      <Link
-                        className="page-redirect"
-                        to="/work/editing/advance/gaming"
+                      <a
+                        className='page-redirect'
+                        href="/work/editing/advance/gaming"
                       >
                         8 Gaming Reels
-                      </Link>
+                      </a>
                     </div>
 
                     <div className="data-child">
-                      <Link
-                        className="page-redirect"
-                        to="/work/editing/advance/interview"
+                      <a
+                        className='page-redirect'
+                        href="/work/editing/advance/interview"
                       >
                         9 Interview Reels
-                      </Link>
+                      </a>
                     </div>
 
                     <div className="data-child">
-                      <Link
-                        className="page-redirect"
-                        to="/work/editing/advance/education"
+                      <a
+                        className='page-redirect'
+                        href="/work/editing/advance/education"
                       >
                         10 Education Reels
-                      </Link>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -494,104 +493,104 @@ const Nav = () => {
           </div>
           <div closed="true" ref={GraphicDesignCon} className="graphic item">
             <div className="item-content">
-              <h2 className="nav-link">Graphic Design</h2>
+              <h2 className="nav-a nav-link">Graphic Design</h2>
               <div className="drop-down"></div>
             </div>
             <div className="item-data">
               <div className="item-data-child">
                 <div className="data-child">
-                  <Link
-                    to='/work/thumbnail/documentary'
-                    className="page-redirect"
+                  <a
+                    href='/work/thumbnail/documentary'
+                    
                   >
                     1 Documentary Thumbnails
-                  </Link>
+                  </a>
                 </div>
 
                 <div className="data-child">
-                  <Link
-                    to='/work/thumbnail/education'
-                    className="page-redirect"
+                  <a
+                    href='/work/thumbnail/education'
+                    
                   >
                     2 Education Thumbnails
-                  </Link>
+                  </a>
                 </div>
 
                 <div className="data-child">
-                  <Link
-                    to='/work/thumbnail/fitness'
-                    className="page-redirect"
+                  <a
+                    href='/work/thumbnail/fitness'
+                    
                   >
                     3 Fitness Thumbnails
-                  </Link>
+                  </a>
                 </div>
 
                 <div className="data-child">
-                  <Link
-                    to='/work/thumbnail/gaming'
-                    className="page-redirect"
+                  <a
+                    href='/work/thumbnail/gaming'
+                    
                   >
                     4 Gaming Thumbnails
-                  </Link>
+                  </a>
                 </div>
 
                 <div className="data-child">
-                  <Link
-                    to='/work/thumbnail/podcast'
-                    className="page-redirect"
+                  <a
+                    href='/work/thumbnail/podcast'
+                    
                   >
                     5 Podcast Thumbnails
-                  </Link>
+                  </a>
                 </div>
 
                 <div className="data-child">
-                  <Link
-                    to='/work/thumbnail/tech'
-                    className="page-redirect"
+                  <a
+                    href='/work/thumbnail/tech'
+                    
                   >
                     6 Tech Thumbnails
-                  </Link>
+                  </a>
                 </div>
 
                 <div className="data-child">
-                  <Link
-                    to='/work/thumbnail/trading'
-                    className="page-redirect"
+                  <a
+                    href='/work/thumbnail/trading'
+                    
                   >
                     7 Trading Thumbnails
-                  </Link>
+                  </a>
                 </div>
 
                 <div className="data-child">
-                  <Link
-                    to='/work/thumbnail/vlog'
-                    className="page-redirect"
+                  <a
+                    href='/work/thumbnail/vlog'
+                    
                   >
                     8 Vlog Thumbnails
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-          <a href="#about-section" className="nav-link ">
+          <a href="/#about-section" className="nav-a nav-link ">
             About
           </a>
-          <a className="nav-link">Contact</a>
+          <a className="nav-a nav-link">Contact</a>
         </div>
       </div>
       <nav>
         <div className="logo">
-          <Link to="/">
+          <a href="/">
             <div className="icon">
               <img src="/logo/flash_cut_white.png" alt="" />
             </div>
-          </Link>
+          </a>
         </div>
         <div className="items">
           <div className="nav-item courier">
             <div className="line-con">
               <div className="line"></div>
-              <Link to="/">Home</Link>
+              <a href="/">Home</a>
             </div>
           </div>
           <div className="nav-item courier sub-child-opener-con">
@@ -603,93 +602,92 @@ const Nav = () => {
                 >
                   <div className="line-con">
                     <div className="line"></div>
-                    <Link
-                      className="page-redirect"
-                      to="/work/editing/basic/podcast"
+                    <a
+                      className='page-redirect'
+                      href="/work/editing/basic/podcast"
                     >
                       Podcasts
-                    </Link>
+                    </a>
                   </div>
                   <div className="line-con">
                     <div className="line"></div>
-                    <Link
-                      className="page-redirect"
-                      to="/work/editing/basic/business"
+                    <a
+                      className='page-redirect'
+                      href="/work/editing/basic/business"
                     >
                       Business ADS
-                    </Link>
+                    </a>
                   </div>
                   <div className="line-con">
                     <div className="line"></div>
-                    <Link
-                      className="page-redirect"
-                      to="/work/editing/basic/gym"
+                    <a
+                      className='page-redirect'
+                      href="/work/editing/basic/gym"
                     >
                       GYM Edits
-                    </Link>
+                    </a>
                   </div>
                   <div className="line-con">
                     <div className="line"></div>
-                    <Link
-                      className="page-redirect"
-                      to="/work/editing/basic/animated"
+                    <a
+                      className='page-redirect'
+                      href="/work/editing/basic/animated"
                     >
                       Animated Edits
-                    </Link>
+                    </a>
                   </div>
                   <div className="line-con">
                     <div className="line"></div>
-                    <Link
-                      className="page-redirect"
-                      to="/work/editing/basic/faceless"
+                    <a
+                      className='page-redirect'
+                      href="/work/editing/basic/faceless"
                     >
                       Faceless Edits
-                    </Link>
+                    </a>
                   </div>
                   <div className="line-con">
                     <div className="line"></div>
-                    <Link
-                      className="page-redirect"
-                      to="/work/editing/basic/health"
+                    <a
+                      className='page-redirect'
+                      href="/work/editing/basic/health"
                     >
                       Health Edits
-                    </Link>
+                    </a>
                   </div>
                   <div className="line-con">
                     <div className="line"></div>
-                    <Link
-                      className="page-redirect"
-                      to="/work/editing/basic/tech"
+                    <a className='page-redirect'
+                      href="/work/editing/basic/tech"
                     >
                       Tech Reels
-                    </Link>
+                    </a>
                   </div>
                   <div className="line-con">
                     <div className="line"></div>
-                    <Link
-                      className="page-redirect"
-                      to="/work/editing/basic/gaming"
+                    <a
+                      className='page-redirect'
+                      href="/work/editing/basic/gaming"
                     >
                       Gaming Reels
-                    </Link>
+                    </a>
                   </div>
                   <div className="line-con">
                     <div className="line"></div>
-                    <Link
-                      className="page-redirect"
-                      to="/work/editing/basic/interview"
+                    <a
+                      className='page-redirect'
+                      href="/work/editing/basic/interview"
                     >
                       Interview Reels
-                    </Link>
+                    </a>
                   </div>
                   <div className="line-con">
                     <div className="line"></div>
-                    <Link
-                      className="page-redirect"
-                      to="/work/editing/basic/education"
+                    <a
+                      className='page-redirect'
+                      href="/work/editing/basic/education"
                     >
                       Education Reels
-                    </Link>
+                    </a>
                   </div>
                 </div>
                 <div className="line"></div>
@@ -699,100 +697,100 @@ const Nav = () => {
                 <div className="sub-child-con-sub">
                   <div className="line-con">
                     <div className="line"></div>
-                    <Link
-                      to='/work/editing/advance/podcast'
-                      className="page-redirect"
+                    <a
+                      href='/work/editing/advance/podcast'
+                      className='page-redirect'
                     >
                       Podcasts
-                    </Link>
+                    </a>
                   </div>
                   <div className="line-con">
                     <div className="line"></div>
-                    <Link
-                      to='/work/editing/advance/business'
-                      className="page-redirect"
+                    <a
+                      href='/work/editing/advance/business'
+                      className='page-redirect'
                     >
                       Business ADS
-                    </Link>
+                    </a>
                   </div>
                   <div className="line-con">
                     <div className="line"></div>
-                    <Link
-                      to='/work/editing/advance/gym'
-                      className="page-redirect"
+                    <a
+                      href='/work/editing/advance/gym'
+                      className='page-redirect'
                     >
                       GYM Edits
-                    </Link>
+                    </a>
                   </div>
                   <div className="line-con">
                     <div className="line"></div>
-                    <Link
-                      to='/work/editing/advance/animated'
-                      className="page-redirect"
+                    <a
+                      href='/work/editing/advance/animated'
+                      className='page-redirect'
                     >
                       Animated Edits
-                    </Link>
+                    </a>
                   </div>
                   <div className="line-con">
                     <div className="line"></div>
-                    <Link
-                      to='/work/editing/advance/faceless'
-                      className="page-redirect"
+                    <a
+                      href='/work/editing/advance/faceless'
+                      className='page-redirect'
                     >
                       Faceless Edits
-                    </Link>
+                    </a>
                   </div>
                   <div className="line-con">
                     <div className="line"></div>
-                    <Link
-                      to='/work/editing/advance/health'
-                      className="page-redirect"
+                    <a
+                      href='/work/editing/advance/health'
+                      className='page-redirect'
                     >
                       Health Edits
-                    </Link>
+                    </a>
                   </div>
                   <div className="line-con">
                     <div className="line"></div>
-                    <Link
-                      to='/work/editing/advance/tech'
-                      className="page-redirect"
+                    <a
+                      href='/work/editing/advance/tech'
+                      className='page-redirect'
                     >
                       Tech Reels
-                    </Link>
+                    </a>
                   </div>
                   <div className="line-con">
                     <div className="line"></div>
-                    <Link
-                      to='/work/editing/advance/gaming'
-                      className="page-redirect"
+                    <a
+                      href='/work/editing/advance/gaming'
+                      className='page-redirect'
                     >
                       Gaming Reels
-                    </Link>
+                    </a>
                   </div>
                   <div className="line-con">
                     <div className="line"></div>
-                    <Link
-                      to='/work/editing/advance/interview'
-                      className="page-redirect"
+                    <a
+                      href='/work/editing/advance/interview'
+                      className='page-redirect'
                     >
                       Interview Reels
-                    </Link>
+                    </a>
                   </div>
                   <div className="line-con">
                     <div className="line"></div>
-                    <Link
-                      to='/work/editing/advance/education'
-                      className="page-redirect"
+                    <a
+                      href='/work/editing/advance/education'
+                      className='page-redirect'
                     >
                       Education Reels
-                    </Link>
+                    </a>
                   </div>
                 </div>
                 <div className="line"></div>
                 <a href="#">Advanced Editing</a>
               </div>
             </div>
-            <p className="sub-child-opener" href="#">
+            <p className="sub-child-opener">
               Services
             </p>
           </div>
@@ -805,75 +803,75 @@ const Nav = () => {
                 >
                   <div className="line-con">
                     <div className="line"></div>
-                    <Link
-                      to='/work/thumbnail/documentary'
-                      className="page-redirect"
+                    <a
+                      href='/work/thumbnail/documentary'
+                      className='page-redirect'
                     >
                       Documentary
-                    </Link>
+                    </a>
                   </div>
                   <div className="line-con">
                     <div className="line"></div>
-                    <Link
-                      to='/work/thumbnail/education'
-                      className="page-redirect"
+                    <a
+                      href='/work/thumbnail/education'
+                      className='page-redirect'
                     >
                       Education
-                    </Link>
+                    </a>
                   </div>
                   <div className="line-con">
                     <div className="line"></div>
-                    <Link
-                      to='/work/thumbnail/fitness'
-                      className="page-redirect"
+                    <a
+                      href='/work/thumbnail/fitness'
+                      className='page-redirect'
                     >
                       Fitness
-                    </Link>
+                    </a>
                   </div>
                   <div className="line-con">
                     <div className="line"></div>
-                    <Link
-                      to='/work/thumbnail/gaming'
-                      className="page-redirect"
+                    <a
+                      href='/work/thumbnail/gaming'
+                      className='page-redirect'
                     >
                       Gaming
-                    </Link>
+                    </a>
                   </div>
                   <div className="line-con">
                     <div className="line"></div>
-                    <Link
-                      to='/work/thumbnail/podcast'
-                      className="page-redirect"
+                    <a
+                      href='/work/thumbnail/podcast'
+                      className='page-redirect'
                     >
                       Podcast
-                    </Link>
+                    </a>
                   </div>
                   <div className="line-con">
                     <div className="line"></div>
-                    <Link
-                      to='/work/thumbnail/tech'
-                      className="page-redirect"
+                    <a
+                      href='/work/thumbnail/tech'
+                      className='page-redirect'
                     >
                       Tech
-                    </Link>
+                    </a>
                   </div>
                   <div className="line-con">
                     <div className="line"></div>
-                    <Link
-                      to='/work/thumbnail/trading'
-                      className="page-redirect"
+                    <a
+                      href='/work/thumbnail/trading'
+                      className='page-redirect'
                     >
                       Trading
-                    </Link>
+                    </a>
                   </div>
                   <div className="line-con">
                     <div className="line"></div>
-                    <Link
-                      to='/work/thumbnail/vlog_lifestyle'
-                      className="page-redirect"
+                    <a
+                      href='/work/thumbnail/vlog_lifestyle'
+                      className='page-redirect'
                     >
                       Vlog Lifestyle
-                    </Link>
+                    </a>
                   </div>
                 </div>
                 <div className="line"></div>

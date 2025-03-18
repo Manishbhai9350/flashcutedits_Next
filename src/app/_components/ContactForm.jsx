@@ -1,10 +1,10 @@
+'use client'
 import { useForm } from "@formspree/react";
 import '../index.css'
 
 function ContactForm() {
-  const [state, handleSubmit, reset] = useForm(
-    import.meta.env.FormSpreeId || "xdkeojwk"
-  );
+  // console.log(process.env.FormSpreeId)
+  const [state, handleSubmit, reset] = useForm('xdkeojwk');
   if (state.succeeded) {
     return (
       <div style={{height:100,display:'flex',alignItems:'center'}}>
