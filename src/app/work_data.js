@@ -567,7 +567,7 @@ export const WorkData = {
                     },
                 ]
             },
-            vlog:{
+            vlog_lifestyle:{
                 title:'Vlog Lifestyle Thumbnails',
                 works:[
                     {
