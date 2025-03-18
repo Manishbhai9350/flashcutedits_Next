@@ -271,7 +271,7 @@ const Nav = () => {
         <div className="logo">
           <div className="logo-image">
           <a  href="/">
-            <Image width={150} height={100} src="/logo/flash_cut_white.png" alt="Logo" />
+            <Image width={150} height={50} src="/logo/flash_cut_white.png" alt="Logo" />
           </a>
           </div>
         </div>
