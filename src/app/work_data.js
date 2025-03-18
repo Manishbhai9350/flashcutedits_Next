@@ -8,10 +8,50 @@ export const WorkData = {
                     title:'Podcasts Editing',
                 },
                 business:{
-                    title:'Business ADS'
+                    title:'Business ADS',
+                    works:[
+                        {
+                            id:'1RxAG8XZ4pAF7pOFg4igV_76af1i4-ZIL',
+                            tag:'Business ADS'
+                        },
+                        {
+                            id:'1pyncU1xOJBPcx0YSyBAo9_MqeJZqTHmd',
+                            tag:'Business ADS'
+                        },
+                        {
+                            id:'14TBnjuOcWEotrBnp1snH4hBql--V1tgQ',
+                            tag:'Business ADS'
+                        },
+                        {
+                            id:'1Eo05PJgZZf_SgVnEbO0McNg-aQpRNMMq',
+                            tag:'Business ADS'
+                        },
+                    ]
                 },
                 gym:{
-                    title:"GYM Edits"
+                    title:"GYM Edits",
+                    works:[
+                        {
+                            id:'1aen2COnXM4B7vfm5eCOpr_IcNy9e70Jh',
+                            tag:"GYM Editing"
+                        },
+                        {
+                            id:'1al0FDNtPdQk3lvm0YOG_p-3mAPQ_OIEr',
+                            tag:"GYM Editing"
+                        },
+                        {
+                            id:'1aecvrnOKhsOpcDn7ZTZotXyUPwkJj9ob',
+                            tag:"GYM Editing"
+                        },
+                        {
+                            id:'1ahN4OcGuA0CBAr258iANcCSAWSt8B5AC',
+                            tag:"GYM Editing"
+                        },
+                        {
+                            id:'1agT2MSFJEulmmr4N4PYBbuM1fUd6ybbT',
+                            tag:"GYM Editing"
+                        },
+                    ]
                 },
                 animated:{
                     title:"Animated Edits"
@@ -23,10 +63,55 @@ export const WorkData = {
                     title:"Health Edits"
                 },
                 tech:{
-                    title:"Tech Reels"
+                    title:"Tech Reels",
+                    works:[
+                        {
+                            id:'1b6iDsXsMKAtmp88UDV_T8pJnF1AWZjNT',
+                            tag:"Tech Reels Editing"
+                        }
+                    ]
                 },
                 gaming:{
-                    title:"Gaming Reels"
+                    title:"Gaming Reels",
+                    works:[
+                        {
+                            id:'1W3R9IIZ2j6O3010RYNHlr8leH8i2JIaB',
+                            tag:'Gaming Video Editing'
+                        },
+                        {
+                            id:'17G4CltljI4PBY9MEX2L0vFyZHMMnzGFH',
+                            tag:'Gaming Video Editing'
+                        },
+                        {
+                            id:'1k7FjOXaY4bwbRz3Khyr3PXEdHeNs0U_H',
+                            tag:'Gaming Video Editing'
+                        },
+                    ]
+                },
+                cinematic:{
+                    title:'Cinematic Video Editing',
+                    works:[
+                        {
+                            id:'1axxo8MOhUUdiWTsYCGSyNjcSlGx6JOx8',
+                            tag:'Cinematic Editing'
+                        },
+                        {
+                            id:'1avO1UFH7-hUAIsajH2cT3gF8dY9yKNhB',
+                            tag:'Cinematic Editing'
+                        },
+                        {
+                            id:'1b1fCb98sgVwL710CD6nfpEnlfaG2pzqp',
+                            tag:'Cinematic Editing'
+                        },
+                        {
+                            id:'1b-8HKWukpN-bWsIA3x8JF-USCc_R8LzX',
+                            tag:'Cinematic Editing'
+                        },
+                        {
+                            id:'1ay3ed-eI7aghMBTAhn2LUdvrYDocLeR5',
+                            tag:'Cinematic Editing'
+                        },
+                    ]
                 },
                 interview:{
                     title:"Interview Reels"

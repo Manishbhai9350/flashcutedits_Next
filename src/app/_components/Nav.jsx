@@ -327,9 +327,9 @@ const Nav = () => {
                     <div className="data-child">
                       <a
                         className='page-redirect'
-                        href="/work/editing/basic/animated"
+                        href="/work/editing/basic/cinemtic"
                       >
-                        4 Animated Edits
+                        4 Cinematic Edits
                       </a>
                     </div>
 
@@ -428,9 +428,9 @@ const Nav = () => {
                     <div className="data-child">
                       <a
                         className='page-redirect'
-                        href="/work/editing/advance/animated"
+                        href="/work/editing/advance/cinematic"
                       >
-                        4 Animated Edits
+                        4 Cinematic Edits
                       </a>
                     </div>
 
@@ -631,9 +631,9 @@ const Nav = () => {
                     <div className="line"></div>
                     <a
                       className='page-redirect'
-                      href="/work/editing/basic/animated"
+                      href="/work/editing/basic/cinematic"
                     >
-                      Animated Edits
+                      Cinematic Edits
                     </a>
                   </div>
                   <div className="line-con">
@@ -725,10 +725,10 @@ const Nav = () => {
                   <div className="line-con">
                     <div className="line"></div>
                     <a
-                      href='/work/editing/advance/animated'
+                      href='/work/editing/advance/cinematic'
                       className='page-redirect'
                     >
-                      Animated Edits
+                      Cinematic Edits
                     </a>
                   </div>
                   <div className="line-con">

@@ -12,7 +12,7 @@ const BasicEditing = () => {
     <main>
       <section className="works">
         <div className="works-title">
-          <h1>Advance Editing</h1>
+          <h1>Basic Video Editing</h1>
         </div>
         <h3 className="works-sub-type">{title}</h3>
         <div className="works-content">
