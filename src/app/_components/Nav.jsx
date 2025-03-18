@@ -269,9 +269,11 @@ const Nav = () => {
     <>
       <div className="mobile-nav">
         <div className="logo">
+          <div className="logo-image">
           <a  href="/">
-            <Image fill src="/logo/flash_cut_white.png" alt="Logo" />
+            <Image width={150} height={100} src="/logo/flash_cut_white.png" alt="Logo" />
           </a>
+          </div>
         </div>
         <div className="hamburger">
           <div className="line"></div>
@@ -584,7 +586,7 @@ const Nav = () => {
         <div className="logo">
           <a href="/">
             <div className="icon">
-              <Image fill src="/logo/flash_cut_white.png" alt="" />
+              <Image width={150} height={100} src="/logo/flash_cut_white.png" alt="" />
             </div>
           </a>
         </div>

@@ -21,7 +21,7 @@ const Thumbnail = () => {
               return (
                 <div key={index} className="thumbnail-item">
                   <div className="thumbnail">
-                    <Image fill src={work.img} alt="WorkImage" />
+                    <Image width={300} height={250} src={work.img} alt="WorkImage" />
                   </div>
                   <div className="content">
                     <div className="tag">

@@ -13,7 +13,7 @@ export default function Home() {
     <main>
       <section className="landing">
         <div className="image">
-          <Image fill alt='Home Image' src='/grid.avig' />
+          <Image fill alt='Home Image' src='/grid.avif' />
         </div>
         <h1 className="santoshi">Welcome To</h1>
         <h1 className="santoshi">Flashcut Edits</h1>
@@ -38,20 +38,20 @@ export default function Home() {
           <h1 className="service-heading split-text-heading santoshi">Our Services</h1>
           <div className="services">
             <div className="service">
-              <div className="image">
-                <Image fill src={'/basic_editing.jpg'} alt='Image' />
+              <div style={{overflow:'hidden'}} className="image">
+                <Image width={150} height={150} style={{borderRadius:'50%'}}  src={'/basic_editing.jpg'} alt='Image' />
               </div>
               <h4 className="courier">Basic Video Editing</h4>
             </div>
             <div className="service">
               <div className="image">
-                <Image fill src="/graphic_design.jpg" alt="Image" />
+                <Image width={150} height={150} style={{borderRadius:'50%'}} src="/graphic_design.jpg" alt="Image" />
               </div>
               <h4 className="courier">Advance Video Editing</h4>
             </div>
             <div className="service">
               <div className="image">
-                <Image fill src="/edit.jpg" alt="Image" />
+                <Image width={150} height={150} style={{borderRadius:'50%'}} src="/edit.jpg" alt="Image" />
               </div>
               <h4 className="courier">Graphic Desinging</h4>
             </div>
@@ -61,7 +61,7 @@ export default function Home() {
       <section id="about-section" className="about-section">
         <div className="about-img">
           <div className="img">
-            <Image fill src="/team.jpg" alt="img"/>
+            <Image width={300} height={400} src="/team.jpg" alt="img"/>
           </div>
         </div>
         <div className="about-info santoshi">
@@ -75,7 +75,7 @@ export default function Home() {
         <div className="us-info">
           <h3 className="santoshi">Why Choose US?</h3>
         <div className="us-about">
-          <ul>
+          <ul style={{listStyle:'none'}}>
             <li>
               <p style={{fontSize: ".88rem!importan",letterSpacing:-.5}} className="courier">
                 Experienced Editors - Our team includes skilled professionals with
@@ -127,7 +127,7 @@ export default function Home() {
         </div>
         <div className="us-image">
           <div className="img">
-            <Image fill src="/why_us.jpg" alt="Image"/>
+            <Image width={300} height={400} src="/why_us.jpg" alt="Image"/>
           </div>
         </div>
       </section>
