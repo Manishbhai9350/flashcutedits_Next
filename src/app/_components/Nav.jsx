@@ -270,8 +270,8 @@ const Nav = () => {
       <div className="mobile-nav">
         <div className="logo">
           <div className="logo-image">
-          <a style={{background:'red'}}  href="/">
-            <Image width={150} height={50} src="/logo/flash_cut_white.png" alt="Logo" />
+          <a style={{position:'relative'}}  href="/">
+            <Image style={{position:'absolute',top:'50%',left:'50%',transform:'translate(-50%,-50%)'}} width={150} height={50} src="/logo/flash_cut_white.png" alt="Logo" />
           </a>
           </div>
         </div>
