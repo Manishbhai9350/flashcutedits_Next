@@ -332,7 +332,7 @@ const Nav = () => {
                     <div className="data-child">
                       <a
                         className='page-redirect'
-                        href="/work/editing/basic/cinemtic"
+                        href="/work/editing/basic/cinematic"
                       >
                         4 Cinematic Edits
                       </a>
