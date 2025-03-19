@@ -568,7 +568,7 @@ const Nav = () => {
 
                 <div className="data-child">
                   <a
-                    href='/work/thumbnail/vlog'
+                    href='/work/thumbnail/vlog_lifestyle'
                     
                   >
                     8 Vlog Thumbnails
