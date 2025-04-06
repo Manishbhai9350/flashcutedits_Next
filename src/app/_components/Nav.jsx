@@ -4,6 +4,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Image from 'next/image';
 import { usePathname } from "next/navigation";
+import Link from 'next/link'
 import { useRef , useEffect} from 'react';
 
 const Nav = () => {
@@ -269,10 +270,10 @@ const Nav = () => {
     <>
       <div className="mobile-nav">
         <div className="logo">
-          <div className="logo-image">
-          <a  href="/">
-            <Image width={150} height={100} src="/logo/flash_cut_white.png" alt="Logo" />
-          </a>
+          <div className='logo-img'>
+            <Link href='/'  >
+              <Image width={150} height={50} src='/logo/flash_cut_white.png' alt='img' />
+            </Link>
           </div>
         </div>
         <div className="hamburger">
@@ -331,6 +332,18 @@ const Nav = () => {
                     <div className="data-child">
                       <a
                         className='page-redirect'
+<<<<<<< HEAD
+=======
+                        href="/work/editing/basic/cinematic"
+                      >
+                        4 Cinematic Edits
+                      </a>
+                    </div>
+
+                    <div className="data-child">
+                      <a
+                        className='page-redirect'
+>>>>>>> dd4ec9ccde55290588d88a4a34ab3cb9ea4a7767
                         href="/work/editing/basic/faceless"
                       >
                         5 Faceless Edits
