@@ -331,15 +331,6 @@ const Nav = () => {
                     <div className="data-child">
                       <a
                         className='page-redirect'
-                        href="/work/editing/basic/cinemtic"
-                      >
-                        4 Cinematic Edits
-                      </a>
-                    </div>
-
-                    <div className="data-child">
-                      <a
-                        className='page-redirect'
                         href="/work/editing/basic/faceless"
                       >
                         5 Faceless Edits
@@ -429,14 +420,7 @@ const Nav = () => {
                       </a>
                     </div>
 
-                    <div className="data-child">
-                      <a
-                        className='page-redirect'
-                        href="/work/editing/advance/cinematic"
-                      >
-                        4 Cinematic Edits
-                      </a>
-                    </div>
+                    
 
                     <div className="data-child">
                       <a
@@ -567,10 +551,10 @@ const Nav = () => {
 
                 <div className="data-child">
                   <a
-                    href='/work/thumbnail/vlog'
+                    href='/work/thumbnail/vlog_lifestyle'
                     
                   >
-                    8 Vlog Thumbnails
+                    8 vlog_lifestyle 
                   </a>
                 </div>
               </div>
@@ -629,15 +613,6 @@ const Nav = () => {
                       href="/work/editing/basic/gym"
                     >
                       GYM Edits
-                    </a>
-                  </div>
-                  <div className="line-con">
-                    <div className="line"></div>
-                    <a
-                      className='page-redirect'
-                      href="/work/editing/basic/cinematic"
-                    >
-                      Cinematic Edits
                     </a>
                   </div>
                   <div className="line-con">
@@ -724,15 +699,6 @@ const Nav = () => {
                       className='page-redirect'
                     >
                       GYM Edits
-                    </a>
-                  </div>
-                  <div className="line-con">
-                    <div className="line"></div>
-                    <a
-                      href='/work/editing/advance/cinematic'
-                      className='page-redirect'
-                    >
-                      Cinematic Edits
                     </a>
                   </div>
                   <div className="line-con">
@@ -874,7 +840,7 @@ const Nav = () => {
                       href='/work/thumbnail/vlog_lifestyle'
                       className='page-redirect'
                     >
-                      Vlog Lifestyle
+                      vlog_lifestyle
                     </a>
                   </div>
                 </div>

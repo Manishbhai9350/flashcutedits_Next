@@ -14,7 +14,7 @@ const Thumbnail = () => {
       <section className="works">
         <div className="works-title">
           <h2 style={{textAlign:'center'}}>{ThumbnailData.title}</h2>
-        </div>
+        </div>  
         <div className="works-content">
           {ThumbnailData?.works ? (
             ThumbnailData.works.map((work, index) => {
