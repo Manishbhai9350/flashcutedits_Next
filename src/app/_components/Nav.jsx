@@ -329,24 +329,13 @@ const Nav = () => {
                       </a>
                     </div>
 
+                  
                     <div className="data-child">
                       <a
                         className='page-redirect'
-<<<<<<< HEAD
-=======
-                        href="/work/editing/basic/cinematic"
-                      >
-                        4 Cinematic Edits
-                      </a>
-                    </div>
-
-                    <div className="data-child">
-                      <a
-                        className='page-redirect'
->>>>>>> dd4ec9ccde55290588d88a4a34ab3cb9ea4a7767
                         href="/work/editing/basic/faceless"
                       >
-                        5 Faceless Edits
+                        4 Faceless Edits
                       </a>
                     </div>
                     <div className="data-child">
@@ -354,7 +343,7 @@ const Nav = () => {
                         className='page-redirect'
                         href="/work/editing/basic/health"
                       >
-                        6 Health Edits
+                        5 Health Edits
                       </a>
                     </div>
 
@@ -363,7 +352,7 @@ const Nav = () => {
                         className='page-redirect'
                         href="/work/editing/basic/tech"
                       >
-                        7 Tech Reels
+                        6 Tech Reels
                       </a>
                     </div>
 
@@ -372,7 +361,7 @@ const Nav = () => {
                         className='page-redirect'
                         href="/work/editing/basic/gaming"
                       >
-                        8 Gaming Reels
+                        7 Gaming Reels
                       </a>
                     </div>
 
@@ -381,7 +370,7 @@ const Nav = () => {
                         className='page-redirect'
                         href="/work/editing/basic/interview"
                       >
-                        9 Interview Reels
+                        8 Interview Reels
                       </a>
                     </div>
 
@@ -389,8 +378,8 @@ const Nav = () => {
                       <a
                         className='page-redirect'
                         href="/work/editing/basic/education"
-                      >
-                        10 Education Reels
+                      >  
+                        9 Education Reels
                       </a>
                     </div>
                   </div>
@@ -440,7 +429,7 @@ const Nav = () => {
                         className='page-redirect'
                         href="/work/editing/advance/faceless"
                       >
-                        5 Faceless Edits
+                        4 Faceless Edits
                       </a>
                     </div>
                     <div className="data-child">
@@ -448,7 +437,7 @@ const Nav = () => {
                         className='page-redirect'
                         href="/work/editing/advance/health"
                       >
-                        6 Health Edits
+                        5 Health Edits
                       </a>
                     </div>
 
@@ -457,7 +446,7 @@ const Nav = () => {
                         className='page-redirect'
                         href="/work/editing/advance/tech"
                       >
-                        7 Tech Reels
+                        6 Tech Reels
                       </a>
                     </div>
 
@@ -466,7 +455,7 @@ const Nav = () => {
                         className='page-redirect'
                         href="/work/editing/advance/gaming"
                       >
-                        8 Gaming Reels
+                        7 Gaming Reels
                       </a>
                     </div>
 
@@ -475,7 +464,7 @@ const Nav = () => {
                         className='page-redirect'
                         href="/work/editing/advance/interview"
                       >
-                        9 Interview Reels
+                        8 Interview Reels
                       </a>
                     </div>
 
@@ -484,7 +473,7 @@ const Nav = () => {
                         className='page-redirect'
                         href="/work/editing/advance/education"
                       >
-                        10 Education Reels
+                        9 Education Reels
                       </a>
                     </div>
                   </div>
