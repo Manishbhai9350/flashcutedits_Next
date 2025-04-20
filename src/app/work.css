@@ -468,12 +468,12 @@
           justify-content: flex-start;
           align-items: flex-start;
           gap: 5px;
-          padding: 5px;
+          padding: 10px;
           max-width: 300px;
           height: auto;
           position: absolute;
           top: 0%;
-          left: 100%;
+          left: 110%;
           display: none;
   
           a,

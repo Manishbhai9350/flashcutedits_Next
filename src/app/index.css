@@ -355,20 +355,18 @@ nav {
       }
 
       .sub-child-con-sub {
-        /* background: white; */
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         gap: 5px;
-        padding: 5px;
-        max-width: 300px;
+        padding: 10px;
+        max-width: 310px;
         height: auto;
         position: absolute;
         top: 0%;
-        left: 100%;
+        left: 110%;
         display: none;
-
         a,
         p {
           cursor: pointer;

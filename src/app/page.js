@@ -67,22 +67,15 @@ export default function Home() {
         <div className="about-info santoshi">
           <h1>Welcome to Flashcut Edits - Where Creativity Meets Precision!
           </h1>
-          <p className="courier">At Flashcut Edits, we specialize in high-quality, professional video editing services tailored for content creators, businesses, and influencers. Whether you are a YouTuber, an entrepreneur, or a brand looking to elevate your video content, we ensure seamless edits that engage and captivate your audience.
+          <p className="courier">At Flashcut Edits, we specialize in high-quality, professional video editing services tailored for content creators, businesses, and influencers. Whether you are a YouTuber, an entrepreneur, or a brand looking to elevate your video content, I ensure seamless edits that engage and captivate your audience.
           </p>
         </div>
       </section>
       <section className="why-us-section">
         <div className="us-info">
-          <h3 className="santoshi">Why Choose US?</h3>
+          <h3 className="santoshi">Why Choose?</h3>
         <div className="us-about">
           <ul style={{listStyle:'none'}}>
-            <li>
-              <p style={{fontSize: ".88rem!importan",letterSpacing:-.5}} className="courier">
-                Experienced Editors - Our team includes skilled professionals with
-                2+ to 4+ years of experience, ensuring precise and high-quality
-                video edits.
-              </p>
-            </li>
             <li>
               <p style={{fontSize:".88rem!importan",letterSpacing:-.5}} className="courier">
                 Customized to Your Style - Whether you prefer cinematic, fast-paced,
@@ -159,7 +152,7 @@ export default function Home() {
                   </div>
                   <div className="info">
                     <h3 className="santoshi">Email</h3>
-                    <p className="courier">flashcuteditss@gmail.com</p>
+                    <p className="courier">jaitanishq222@gmail.com</p>
                   </div>
                 </div>
                 <div className="socials">

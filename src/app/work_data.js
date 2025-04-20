@@ -121,7 +121,7 @@ export const WorkData = {
                 },
             }
     },
-    advance_editing:{
+    short_form_editing:{
         title:'Advance Video Editing',
         type:'video',
         Categories:
